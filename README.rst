@@ -1,29 +1,20 @@
 .. -*- mode: rst -*-
 
-.. image:: https://img.shields.io/pypi/v/pybitflyer.svg?maxAge=2592000   :target:
-
-.. image:: https://img.shields.io/pypi/dd/pybitflyer.svg?maxAge=2592000   :target:
 
 pybitflyer
 ==========
 
-``pybitflyer`` is a python wrapper for bitFlyer's REST API.
+``pybitflyer``　は bitFlyerの REST APIのライブラリ。一部API変更があるようで。
 
 Install
 -------
-Using pip
+ pip　でどうぞ。
 
 .. code::
 
-  $ pip install git+https://github.com/yagays/pybitflyer.git
+  $ pip install git+https://github.com/haniokasai/pybitflyer.git
 
-or using pip with PyPI: https://pypi.python.org/pypi/pybitflyer
-
-.. code::
-
-  $ pip install pybitflyer
-
-The requirements for this code is ``requests``, which will be installed automatically.
+必要な要素は自動でインストールされない気がするので、察してください。
 
 Usage
 -----
@@ -33,9 +24,14 @@ Usage
   import pybitflyer
   api = pybitflyer.API(api_key="xxx...", api_secret="yyy...")
 
-If you use HTTP Public API, API Key and API Secret can be omitted.
+ HTTP Public APIを使うならば、 API Key と API Secret　は省略可能。
 
-Example
+.. code:: python
+
+  import pybitflyer
+  api = pybitflyer.API()
+
+例
 -------
 
 Order Book
@@ -52,10 +48,10 @@ Ticker
 
   api.ticker(product_code="BTC_JPY")
 
-Send a New Order
+注文作成
 ~~~~~~~~~~~~~~~~
 
-You need to specify API key and API Secret by creating pybitflyer.API instance.
+APIキーとシークレットを設定してください。
 
 .. code:: python
 
@@ -67,12 +63,13 @@ You need to specify API key and API Secret by creating pybitflyer.API instance.
                      time_in_force="GTC"
                      )
 
-More detail
+詳細
 ~~~~~~~~~~~
 
-For more detail, see the API documentation: https://lightning.bitflyer.jp/docs?lang=en
+詳しいことはこれを読んで察してください: https://lightning.bitflyer.jp/docs?lang=en
 
 Author
 ------
 
+@haniokasai (<htek@haniokasai.com>)
 @yag_ays (<yanagi.ayase@gmail.com>)
