@@ -5,7 +5,8 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -113,5 +114,8 @@ ENV/
 
 # Spyder project settings
 .spyderproject
+
+#idea
+.idea/
 
 
