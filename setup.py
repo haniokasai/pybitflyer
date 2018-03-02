@@ -5,11 +5,13 @@ from setuptools import setup
 setup(
     name="pybitflyer",
     packages=['pybitflyer'],
-    version="0.1.9",
+    version="0.1.9.1",
     description="Python wrapper for bitFlyer's REST API.",
-    author="yag_ays",
-    author_email="yanagi.ayase@gmail.com",
-    url="https://github.com/yagays/pybitflyer",
+    #author="yag_ays",
+    #author_email="yanagi.ayase@gmail.com",
+    author="haniokasai",
+    author_email="htek@haniokasai.com",
+    url="https://github.com/haniokasai/pybitflyer",
     install_requires=['requests'],
     keywords=["bitcoin", "bitflyer", "wrapper", "REST API"],
     classifiers=[
